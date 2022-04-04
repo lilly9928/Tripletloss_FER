@@ -19,12 +19,11 @@ torch.manual_seed(300)
 np.random.seed(300)
 random.seed(300)
 
-embedding_dims =7
 batch_size = 8
 epochs =100
 
-train_df = pd.read_csv("C:/Users/1315/Desktop/data/finaltest_ck.csv")
-test_df = pd.read_csv("C:/Users/1315/Desktop/data/test_ck.csv")
+train_df = pd.read_csv("C:/Users/1315/Desktop/data/ck_test.csv")
+test_df = pd.read_csv("C:/Users/1315/Desktop/data/ck_val.csv")
 
 train_ds = ImageData(train_df,
                  train=True,
